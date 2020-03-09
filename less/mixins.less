@@ -6,15 +6,19 @@
     align-items: @align;
 }
 
-.button-standard ( @bh, @bw){
-    color: @porcelain;
+.btn-standard ( @bh, @bw){
+    color: @wild-sand;
     background-color: @btn-bg-color;
     display: flex;
     align-items: center; 
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 5px;
     font-size: large;
     height: @bh;
     width: @bw;
-}
 
+    &:hover {
+        background-color: @hover-bg;
+        color: @hover-font;
+    }
+}
