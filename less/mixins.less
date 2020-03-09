@@ -1,1 +1,20 @@
 // Mixins Here
+
+.flex-display (@adjust, @align){
+    display: flex;
+    justify-content: @adjust;
+    align-items: @align;
+}
+
+.button-standard ( @bh, @bw){
+    color: @porcelain;
+    background-color: @btn-bg-color;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 15px;
+    font-size: large;
+    height: @bh;
+    width: @bw;
+}
+
