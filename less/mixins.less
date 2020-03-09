@@ -1,1 +1,24 @@
 // Mixins Here
+
+.flex-display (@adjust, @align){
+    display: flex;
+    justify-content: @adjust;
+    align-items: @align;
+}
+
+.btn-standard ( @bh, @bw){
+    color: @wild-sand;
+    background-color: @btn-bg-color;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 5px;
+    font-size: large;
+    height: @bh;
+    width: @bw;
+
+    &:hover {
+        background-color: @hover-bg;
+        color: @hover-font;
+    }
+}
